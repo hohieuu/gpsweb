@@ -1,5 +1,14 @@
 "use client";
 
+const PHONE = "0869913144";
+const ZALO_URL = `https://zalo.me/${PHONE}`;
+
+const ZaloIcon = ({ className }: { className?: string }) => (
+  <svg className={className} width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z" />
+  </svg>
+);
+
 const NewsLatterBox = () => {
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
@@ -11,11 +20,22 @@ const NewsLatterBox = () => {
           Hồ Nhân Ái
         </p>
         <p className="text-base text-body-color dark:text-body-color-dark">
-          <a href="tel:0869913144" className="font-semibold text-primary">0869913144</a>
+          <a href={`tel:${PHONE}`} className="font-semibold text-primary">{PHONE}</a>
         </p>
         <p className="mt-2 text-base text-body-color dark:text-body-color-dark">
           Lắp đặt tận nơi tại Huế
         </p>
+      </div>
+      <div className="flex flex-wrap gap-3">
+        <a
+          href={ZALO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-sm border border-[#0068FF] bg-[#0068FF] px-4 py-2.5 text-sm font-medium text-white duration-300 hover:bg-[#0052cc]"
+        >
+          <ZaloIcon />
+          Chat Zalo
+        </a>
       </div>
 
       <div>

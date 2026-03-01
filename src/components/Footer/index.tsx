@@ -2,6 +2,9 @@
 import Link from "next/link";
 import AIGPSIcon from "../Common/AIGPSIcon";
 
+const PHONE = "0869913144";
+const ZALO_URL = `https://zalo.me/${PHONE}`;
+
 const Footer = () => {
   return (
     <>
@@ -15,7 +18,7 @@ const Footer = () => {
                   <span className="text-xl font-bold text-black dark:text-white">AIGPS</span>
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  <a href="tel:0869913144" className="font-semibold text-primary">0869913144</a> (Hồ Nhân Ái) – Lắp đặt tận nơi tại Huế
+                  <a href={`tel:${PHONE}`} className="font-semibold text-primary">{PHONE}</a> (Hồ Nhân Ái) – Lắp đặt tận nơi tại Huế
                 </p>
                 <div className="flex items-center">
                   <a
@@ -180,10 +183,20 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="tel:0869913144"
+                      href={`tel:${PHONE}`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Gọi 0869913144
+                      Gọi {PHONE}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={ZALO_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Chat Zalo
                     </a>
                   </li>
                   <li>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const PHONE = "0869913144";
+const ZALO_URL = `https://zalo.me/${PHONE}`;
 
 const Hero = () => {
   return (
@@ -26,9 +27,17 @@ const Hero = () => {
                   >
                     Gọi ngay {PHONE}
                   </a>
-                  <span className="inline-flex items-center rounded-sm border border-primary px-6 py-3 text-base font-medium text-primary dark:border-primary dark:text-primary">
-                    <span className="font-semibold">Lắp đặt định vị</span> tận nơi tại Huế
-                  </span>
+                  <a
+                    href={ZALO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-sm border border-[#0068FF] bg-[#0068FF] px-6 py-3 text-base font-medium text-white duration-300 hover:bg-[#0052cc]"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z" />
+                    </svg>
+                    Chat Zalo
+                  </a>
                 </div>
                 <p className="inline-block rounded-full bg-primary/15 px-6 py-2.5 text-base font-semibold text-primary dark:bg-primary/20 dark:text-primary">
                   1000+ xe đã được lắp đặt
