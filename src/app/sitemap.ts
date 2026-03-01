@@ -1,8 +1,17 @@
 import { MetadataRoute } from "next";
+import { getAllBlogSlugs } from "@/components/Blog/blogData";
 
 const BASE = "https://aigps.vn";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const blogSlugs = getAllBlogSlugs();
+  const blogUrls = blogSlugs.map((slug) => ({
+    url: `${BASE}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
   return [
     {
       url: BASE,
@@ -22,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...blogUrls,
     {
       url: `${BASE}/contact`,
       lastModified: new Date(),

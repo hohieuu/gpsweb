@@ -5,9 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Check Pay",
-  description: "Check Pay",
-  // other metadata
+  title: "Blog – Định vị xe máy, mua định vị ở Huế | AIGPS",
+  description: "Bài viết về định vị xe máy tại Việt Nam, định vị xe máy ở Huế, mua định vị ở Huế. AIGPS – Lắp đặt định vị tận nơi tại Huế.",
 };
 
 const Blog = () => {

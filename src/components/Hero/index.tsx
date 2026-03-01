@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[920px] text-center">
                 <h1 className="mb-3 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-4xl md:leading-tight">
-                  Bán và <span className="text-primary">lắp đặt định vị</span> tại Huế
+                  Định vị ô tô - xe máy
                 </h1>
                 <p className="mb-6 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   AIGPS cung cấp thiết bị định vị xe máy, định vị ô tô, camera hành trình và camera giám sát. Đã có kinh nghiệm với 1000+ xe đã được lắp đặt. <span className="font-semibold text-primary">Lắp đặt định vị</span> tận nơi tại Huế, tư vấn và bảo hành.

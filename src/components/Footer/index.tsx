@@ -20,6 +20,9 @@ const Footer = () => {
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   <a href={`tel:${PHONE}`} className="font-semibold text-primary">{PHONE}</a> (Hồ Nhân Ái) – Lắp đặt tận nơi tại Huế
                 </p>
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                  Phường Hóa Châu, thành phố Huế
+                </p>
                 <div className="flex items-center">
                   <a
                     href="/"
