@@ -1,0 +1,6 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f2f9"/>
+  <circle cx="200" cy="140" r="40" stroke="#788293" stroke-width="2" fill="none"/>
+  <path d="M200 180v40M200 180l-20 24M200 180l20 24" stroke="#788293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="250" text-anchor="middle" fill="#788293" font-size="14" font-family="sans-serif">Thay £nh s£n ph©m</text>
+</svg>
