@@ -33,9 +33,9 @@ export default async function BlogSlugPage({ params }: Props) {
   if (!blog) notFound();
   const paragraphs = blogContents[slug] ?? [blog.paragraph];
   const instructions = blogInstructions[slug];
-  const relatedPosts = instructions?.relatedSlugs
+  const relatedPosts = (instructions?.relatedSlugs
     ?.map((s) => getBlogBySlug(s))
-    .filter(Boolean) ?? [];
+    .filter((p): p is NonNullable<Awaited<ReturnType<typeof getBlogBySlug>>> => p != null) ?? []);
 
   return (
     <section className="pb-[120px] pt-[120px]">
