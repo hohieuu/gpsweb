@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/next';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:image" content="https://checkpay.vn/images/twitter-image.png" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
